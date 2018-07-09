@@ -65,10 +65,10 @@ namespace Fleck
 #if NET45
             SetKeepAlive(socket, KeepAliveInterval, RetryInterval);
 #else
-            if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
-            {
+            //if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
+            //{
                 SetKeepAlive(socket, KeepAliveInterval, RetryInterval);
-            }
+            //}
 #endif
 
         }

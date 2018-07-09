@@ -26,9 +26,9 @@ namespace Fleck
             if(!MonoHelper.IsRunningOnMono()){
 #if __MonoCS__
 #else
-#if !NET45
-                if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
-#endif
+//#if !NET45
+//                if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
+//#endif
                 {
                     socket.SetSocketOption(SocketOptionLevel.IPv6, SocketOptionName.IPv6Only, false);
                 }
