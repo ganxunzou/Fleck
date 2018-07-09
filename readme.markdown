@@ -1,3 +1,19 @@
+<<<<<<< HEAD
+Fleck
+===
+
+特别注意
+===
+项目是.net4.7.1以上的版本。我需要的是.net4.0的版本，因此对版本.net的版本进行降级。这个项目用到.net4.7.1的RuntimeInformation的API:
+```
+if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
+{
+    socket.SetSocketOption(SocketOptionLevel.IPv6, SocketOptionName.IPv6Only, false);
+}
+```
+
+我的项目只在window上运行，因此直接去除判断。
+
 Fleck
 ===
 
@@ -125,3 +141,4 @@ server.Start(socket =>
 ```
 
 [nugget]: http://nugget.codeplex.com/ 
+>>>>>>> a22cbbb8176cd5fa2415be5193925102a286d056
